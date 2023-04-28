@@ -2,8 +2,14 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import viewsets, mixins
 
+# from djoser.views import UserViewSet
 from .models import Cat, Owner
-from .serializers import CatSerializer, OwnerSerializer, CatListSerializer
+from .serializers import CatSerializer, OwnerSerializer, CatListSerializer 
+# CustomUserSerializer
+
+
+# class CustomUserViewSet(UserViewSet):
+#     ... 
 
 
 class CatViewSet(viewsets.ModelViewSet):
